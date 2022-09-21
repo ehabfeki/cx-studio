@@ -14,15 +14,28 @@
     font-family: sans-serif;
   }
   p{
-    color: #777777;
+    color: black;
+    padding: 8px 0;
+    margin: 0;
   }
   div{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     margin-bottom:10px;
-    width: 75%;
-    font-weight: 600;
+    width: 100%;
+    font-weight: 400;
+  }
+  .metrics {
+    border-top: 1px solid grey;
+    margin-top: 24px;
+  }
+  .metric {
+    font-weight: 400;
+    padding-top: 4px;
+  }
+  .metric-value {
+    font-weight: bold;
   }
 </style>
 
@@ -30,5 +43,11 @@
 window.onmessage = async event => {
   const message = event.data.pluginMessage
   console.log("::::DEBUG::::MESSAGE::::", message)
+
+  if (message.type === 'selectionChange') {
+    const background = document.getElementById('item-meta-data');
+    background.innerHTML = message.metadata;
+  }
+
 }
 </script>
