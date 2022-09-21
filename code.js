@@ -39,23 +39,23 @@ figma.on('selectionchange', () => {
             '<p>1/ It\'s more likely if you change the font size and colors of the prices it will be more noticeable</p>'
             '<p>2/ With our experience we can say <span class="metric-value">'+metrics.TapRate+'%</span> of users select this option first</p>';
         }
-        if (selectionName =='First option delivery') {
+        else if (selectionName =='First option delivery') {
           tips =
           '<h3>Tips</h3>'+
             '<p>1/ It\'s important to display this delivery option at the first place to encourage client to select it</p>'+
             '<p>2/ With our experience we can say <span class="metric-value">'+metrics.TapRate+'%</span> of users select this option first</p>';
         }
-        if (selectionName =='Second option delivery') {
+        else if (selectionName =='Second option delivery') {
           tips =
             '<h3>Tips/infos</h3>'+
               '<p>2/ With our experience we can say the second option of delivery are selected by <span class="metric-value">'+metrics.TapRate+'%</span></p>'
         }
-        if (selectionName =='Third option delivery') {
+        else if (selectionName =='Third option delivery') {
           tips =
             '<h3>Tips/infos</h3>'+
             '<p>2/ With our experience we can say the third option of delivery are selected by <span class="metric-value">'+metrics.TapRate+'</span>%</p>'
         }
-        if (selectionName =='Recap column') {
+        else if (selectionName =='Recap column') {
           tips =
             '<h3>Tips/infos</h3>'+
             '<p>2/ With our experience we can say the third option of delivery are selected by <span class="metric-value">'+metrics.TapRate+'</span>%</p>'
