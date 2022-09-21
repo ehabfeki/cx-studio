@@ -33,32 +33,23 @@ figma.on('selectionchange', () => {
 
         const selectionName = selection[0].name;
 
-        if (selectionName =='Hi FI') {
+        if (selectionName =='Main CTA') {
           tips =
             '<h3>Tips</h3>'+
-            '<p>1/ It\'s more likely if you change the font size and colors of the prices it will be more noticeable</p>'
-            '<p>2/ With our experience we can say <span class="metric-value">'+metrics.passRate+'%</span> of users select this option first</p>';
+            '<p>1- This elements is the main action users need to take</p>' +
+            '<p>2- It should be the most visible element on the page and always show above the fold</p>'
         }
-        else if (selectionName =='First option delivery') {
+        else if (selectionName =='Reassurance elements section') {
           tips =
-          '<h3>Tips</h3>'+
-            '<p>1/ It\'s important to display this delivery option at the first place to encourage client to select it</p>'+
-            '<p>2/ With our experience we can say <span class="metric-value">'+metrics.passRate+'%</span> of users select this option first</p>';
+            '<h3>Tips</h3>' +
+            '<p>1- Key section to explain payment methods, delivery and services</p>' + 
+            '<p>2- It should be interactive and provide further detail</p>' +
+            '<p>3- Make sure to open a pop-in to avoid driving users away from the checkout</p>'
         }
-        else if (selectionName =='Second option delivery') {
+        else if (selectionName =='Progress bar') {
           tips =
-            '<h3>Tips/infos</h3>'+
-              '<p>2/ With our experience we can say the second option of delivery are selected by <span class="metric-value">'+metrics.passRate+'%</span></p>'
-        }
-        else if (selectionName =='Third option delivery') {
-          tips =
-            '<h3>Tips/infos</h3>'+
-            '<p>2/ With our experience we can say the third option of delivery are selected by <span class="metric-value">'+metrics.passRate+'</span>%</p>'
-        }
-        else if (selectionName =='Recap column') {
-          tips =
-            '<h3>Tips/infos</h3>'+
-            '<p>2/ With our experience we can say the third option of delivery are selected by <span class="metric-value">'+metrics.passRate+'</span>%</p>'
+            '<h3>Tips</h3>' +
+            '<p>This elements guides users throughout the process, it should be interactive, allowing for hesitation</p>'
         }
         else {
           tips = ''
